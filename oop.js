@@ -13,14 +13,15 @@ class Cat extends Pet{
         super(age,gender)
         this.type='Cat'
         this.color=color
+        this.name=this.getName()
     }
     getName(){
-        if(this.age>=1){
-            this.name='Kitten'
-            console.info(this.name)
+        if(this.age<=1){
+            return 'kitten'
+        }else if(this.age>1 && this.age<=2){
+            return 'Grown'
         }else{
-            this.name='Grown'
-            console.info(this.name)
+            return 'Adult'
         }
     }
     makan(){
@@ -29,7 +30,5 @@ class Cat extends Pet{
 }
 
 let Cat1=new Cat(2,'male','White')
-let Cat2=new Cat(1,'female','Orange')
-Cat1.sayHello('Dedyas')
-Cat1.makan()
-console.info(Cat2)
+let Cat2=new Cat(1,'Female','Orange')
+let Cat3=new Cat(5,'Male','Gray')
