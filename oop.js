@@ -32,3 +32,5 @@ class Cat extends Pet{
 let Cat1=new Cat(2,'male','White')
 let Cat2=new Cat(1,'Female','Orange')
 let Cat3=new Cat(5,'Male','Gray')
+let Cat4=new Cat(1,'Male','Black') 
+Cat4.makan()
