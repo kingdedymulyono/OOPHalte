@@ -887,8 +887,10 @@ const cariHalte = (nama) => {
 //     cariIdHalte('matraman'), cariHalte("matraman") ,cariKoridorHalte("matraman"),cariLokasiHalte("matraman"), carilokasiDekatHalte("matraman"), cariLokasiDetailHalte("matraman"),"nyasar"
 // )
 const momen1=new LandMark(cariIdHalte("matraman"),cariHalte("matraman"),cariKoridorHalte("matraman"),0,0,0,"Nyasar")
-console.log(halte[cariIdHalte("matraman")])
+const momen2=new LandMark(cariIdHalte("pasar cempaka"),cariHalte("pasar ceempaka"),cariKoridorHalte("pasar cempaka"),0,0,0,"Apcb")
+console.log(halte[cariIdHalte("sahari")])
 // console.log(halte[cariIdHalte("monumen")].introduction())
 // console.log(halte[cariIdHalte("senayan")].place())
 // console.log(halte[cariIdHalte("kemanggisan")].dimana())
 console.log(momen1.notes("Dedy"))
+console.log(momen2.notes("apcb"))
